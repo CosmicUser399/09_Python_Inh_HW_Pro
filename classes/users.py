@@ -63,7 +63,7 @@ class Admin(User):
         """
         Выводит список всех пользователей.
         """
-        print(f"Всего пользователей: {len(User.users)}")  # Добавим отладочную информацию
+        print(f"\nВсего пользователей: {len(User.users)}")  # Добавим отладочную информацию
         for user in User.users:
             print(user.get_details())
 
